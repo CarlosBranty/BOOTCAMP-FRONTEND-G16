@@ -5,5 +5,5 @@ este repositorio nos sirve para aprender el flujo de trabajo de git y github.
 ### Comandos
 
 * git add .
-* git status.
-* git commit -m "Nombre de Cambios".
+* git status
+* git commit -m "Nombre de Cambios"
