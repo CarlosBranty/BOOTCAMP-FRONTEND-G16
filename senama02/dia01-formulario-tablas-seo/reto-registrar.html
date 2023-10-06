@@ -30,10 +30,10 @@
                 
                 <h1 class="text-5xl font-extrabold text-center">Formulario de Registro !</h1>
                 <p class="text-center">Bienvenido, llene el formulario para registrarse</p>
-                <div class="grid gap-6 grid-cols-2 mt-20">
+                <form class="grid gap-6 grid-cols-2 mt-20 max-w-lg">
                     <label>
                         Nombres
-                        <input class="p-4 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block" type="text" placeholder="Ingresa tus nombres">
+                        <input required class="p-4 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block" type="text" placeholder="Ingresa tus nombres">
                     </label>
                     <label>
                         Apellidos
@@ -41,7 +41,7 @@
                     </label>
                     <label>
                         Email
-                        <input class="p-4 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block" type="email" placeholder="Ingrese su correo electronico">
+                        <input required class="p-4 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block" type="email" placeholder="Ingrese su correo electronico">
                     </label>
                     <label>
                         telefono
@@ -60,10 +60,11 @@
                         Acepto los terminos y condiciones
                         
                     </label>
-                    <button type="submit" class="col-span-2 text-white bg-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full  px-5 py-2.5 text-center ">Registrarse</button>
+                    <input type="submit" class="col-span-2 text-white bg-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full  px-5 py-2.5 text-center " value="Registrarse">
                     
-                </div>
-                <p class="mt-10 text-center">Si ya tiene una cuenta puede hace click para <a class="text-blue-700" href="#">Iniciar sesion</a></p>
+                    
+                </form>
+                <p class="mt-10 text-center ">Si ya tiene una cuenta puede hace click para <a class="text-blue-700" href="#">Iniciar sesion</a></p>
 
                 
                 
