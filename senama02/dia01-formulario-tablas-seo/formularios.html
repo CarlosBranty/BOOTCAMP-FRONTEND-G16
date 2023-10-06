@@ -123,44 +123,80 @@
             <h2>Checkbox</h2>
             <h3>Lenguages de preferencia:</h3>
             <label>
-                <input type="checkbox" name="english" value="en" checked>
+                <input type="checkbox" name="english" value="en" checked/>
                 Ingles
             </label>
             <label>
-                <input type="checkbox" name="spanish" value="es">
+                <input type="checkbox" name="spanish" value="es"/>
                 Español
             </label>
             <label> 
-                <input type="checkbox" name="dothraki" value="do" disabled>
+                <input type="checkbox" name="dothraki" value="do" disabled/>
                 Dothraki
             </label>
-            <input type="submit" value="guardar">
+            <input type="submit" value="guardar"/>
         </form>
 
         <form >
             <h2>Radio buttons</h2>
             <label>
-                <input type="radio" name="language1" value="en">
+                <input type="radio" name="language1" value="en"/>
                 Ingles
             </label>
             <label>
-                <input type="radio" name="language1" value="es" checked>
+                <input type="radio" name="language1" value="es" checked/>
                 Español
             </label>
             <label>
-                <input type="radio" name="language1" value="th">
+                <input type="radio" name="language1" value="th"/>
                 Thailandes
             </label>
             <label>
-                <input type="radio" name="language1" value="kl">
+                <input type="radio" name="language1" value="kl"/>
                 Klingon
             </label>
             <label>
-                <input type="radio" name="language1" value="qu">
+                <input type="radio" name="language1" value="qu"/>
                 Quechua
             </label>
-            <input type="submit" value="Guardar">
+            <input type="submit" value="Guardar"/>
             
+        </form>
+
+        <form>
+            <h2>Validaciones</h2>
+            <label>
+                Nombre
+                <input type="text" name="nombre" minlength="3" maxlength="15" required>
+            </label>
+            <label>
+                email
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Edad
+                <input type="number" name="number" required min="1" max="99">
+            </label>
+
+            <label>
+                Telefono
+                <input type="tel" name="telefono" required placeholder="+51 999999999"
+                pattern="\+[0-9]{2} [0-9]{9}"/>
+                <p>+51 999999999</p>
+            </label>
+
+            <label>
+                Comidas
+                <select required name="comidas">
+                    <option value="">Seleccione su comida favorita...</option>
+                    <option value="pe">Peruana</option>
+                    <option value="br">Brasilera</option>
+                    <option value="fr">Francesa</option>
+                    <option value="jp">Japonesa</option>
+                </select>
+            </label>
+
+            <input type="submit" value="Guardar">
         </form>
     </main>
     
