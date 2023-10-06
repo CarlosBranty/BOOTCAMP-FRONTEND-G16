@@ -4,10 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reto: Formulario de registro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <!-- TODO: Crear un formulario para crear una cuenta de usuario con campos:
+
+    <!-- TO-DO: Crear un formulario para crear una cuenta de usuario con campos:
     nombres, apellidos, email, telefono, password, confirmar password (caja de texto), si gustan pueden 
     agregar mas campos. Y un boton llamado registrarse. Opcionalmente pueden usar el framework PICO que vimos en clase -->
+
+
+    <main class="flex">
+        <div class="bg-white w-[50%] h-screen">
+            <div class="flex justify-between p-2 mb-20 w-full text-center">
+                <img class="w-16 rounded-lg" src="https://marketplace.canva.com/EAFAELFfY8o/1/0/1600w/canva-azul-y-violeta-informal-corporativo-desarrollo-de-aplicaci%C3%B3n-emprendimiento-empresa-logo-Olgzs4zIQXk.jpg" alt="Logo-Empresa"/>
+                <select required name="Lenguages" class=" h-12 bg-white border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block w-18 p-2.5  ">
+                    <option value="">Seleccione su idioma...</option>
+                    <option value="pe">Español</option>
+                    <option value="br">Portugues</option>
+                    <option value="fr">Frances</option>
+                    <option value="jp">Japones</option>
+                </select>
+
+            </div>
+            <div class="grid justify-center">
+                
+                <h1 class="text-5xl font-extrabold text-center">Formulario de Registro !</h1>
+                <p class="text-center">Bienvenido, llene el formulario para registrarse</p>
+                <div class="grid gap-6 grid-cols-2 mt-20">
+                    <label>
+                        Nombres
+                        <input class="p-4 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block" type="text" placeholder="Ingresa tus nombres">
+                    </label>
+                    <label>
+                        Apellidos
+                        <input class="p-4 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block" type="text" placeholder="Ingresa tus Apellidos">
+                    </label>
+                    <label>
+                        Email
+                        <input class="p-4 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block" type="email" placeholder="Ingrese su correo electronico">
+                    </label>
+                    <label>
+                        telefono
+                        <input required class="p-4 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block" type="tel" placeholder="Ingrese su numero de telefono">
+                    </label>
+                    <label>
+                        Contraseña
+                        <input required class="p-4 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block" type="password" placeholder="Cree su contraseña">
+                    </label>
+                    <label>
+                        Confirme su Contraseña
+                        <input required class="p-4 border border-gray-300 text-gray-900 text-sm rounded-lg  focus:border-blue-500 block" type="password" placeholder="Cree su contraseña">
+                    </label>
+                    <label class="col-span-2">
+                        <input type="checkbox" required class="w-4 h-4 border border-gray-300 rounded bg-gray-50">
+                        Acepto los terminos y condiciones
+                        
+                    </label>
+                    <button type="submit" class="col-span-2 text-white bg-black hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full  px-5 py-2.5 text-center ">Registrarse</button>
+                    
+                </div>
+                <p class="mt-10 text-center">Si ya tiene una cuenta puede hace click para <a class="text-blue-700" href="#">Iniciar sesion</a></p>
+
+                
+                
+
+            </div>
+        </div>
+        <div class="bg-black w-[50%] bg-cover h-screen bg-no-repeat flex flex-col justify-between items-start p-7" style="background-image: url('https://i.pinimg.com/1200x/0a/72/00/0a7200c286ccc130202c218a87b17854.jpg');">
+            <div class="flex items-center">
+                <img src="https://about.gitlab.com/images/press/logo/png/gitlab-logo-700.png" class="w-20" alt="">
+                <p class=" font-extrabold text-2xl text-gray-300">EXPLORE</p>
+            </div>
+            <h2 class="text-4xl font-extrabold text-start text-gray-300 ">"Registrate para acceder a nuestros <br> Mejores beneficios"</h2>
+        </div>
+    </main>
 </body>
 </html>
