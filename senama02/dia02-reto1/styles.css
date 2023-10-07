@@ -17,7 +17,7 @@ body {
 
 main {
   /* background-color: aqua; */
-  width: 560px;
+  width: 650px;
   min-height: 400px;
   display: flex;
   
@@ -25,7 +25,7 @@ main {
 
 .photo {
   /* width: 50%; */
-  width: 280px;
+  width: 350px;
   background-color: blueviolet;
   
   background-image: url(./images/image-product-desktop.jpg);
@@ -39,7 +39,7 @@ main {
 .content {
   background-color: hsl(0, 0%, 100%);
   /* width: 50%; */
-  width: 280px;
+  width: 300px;
   padding: 28px;
 
   border-radius: 0 14px 14px 0;
@@ -57,7 +57,7 @@ main {
 .content h1{
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 35px;
+    font-size: 40px;
     color: hsl(212, 21%, 14%);
 }
 .content p{
@@ -96,4 +96,7 @@ main {
     color: hsl(0, 0%, 100%);
     margin-top: 20px;
     cursor: pointer;
+}
+.content button:hover{
+    background-color:hsl(158, 37%, 24%);
 }
