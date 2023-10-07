@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Fraunces', serif;
+*/
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh; /* Viewport height - alto de lo visible de la pantalla*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  /* background-color: aqua; */
+  width: 560px;
+  min-height: 400px;
+  display: flex;
+  
+}
+
+.photo {
+  /* width: 50%; */
+  width: 280px;
+  background-color: blueviolet;
+  
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 14px 0 0 14px;
+  box-shadow: 1px 1px 3px #ccc;
+}
+
+.content {
+  background-color: hsl(0, 0%, 100%);
+  /* width: 50%; */
+  width: 280px;
+  padding: 28px;
+
+  border-radius: 0 14px 14px 0;
+  box-shadow: 1px 1px 3px #ccc;
+}
+
+.content h3{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 7px;
+    color: hsl(228, 12%, 48%);
+}
+
+.content h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 35px;
+    color: hsl(212, 21%, 14%);
+}
+.content p{
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.content div{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.content span{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+.content s{
+     color: hsl(228, 12%, 48%);
+}
+
+.content button{
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+    padding: 14px;
+    width: 100%;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+    cursor: pointer;
+}
