@@ -1,21 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
 
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Orbitron", monospace;
+  background-color: #0d0d0d;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Inicio de Estilos Para el Header */
 header {
-  background-color: #00aab5;
+  background-color: #36363690;
   display: flex;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 30;
-  padding: 20px 0 20px 0px;
+  padding: 0px 0 0px 0px;
   border-radius: 0 0px 20px 20px;
 }
 header nav {
@@ -27,7 +32,7 @@ header nav {
 }
 header .logo {
   color: white;
-  font-size: 64px;
+  font-size: 54px;
   align-items: center;
   display: flex;
   gap: 13px;
@@ -45,8 +50,11 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.781);
   font-size: 14px;
+}
+nav a:hover {
+  color: #c6807a;
 }
 /* Final de Estilos Para el Header */
 
@@ -54,33 +62,42 @@ nav a {
 
 /* Inicio de Estilos para el main */
 main {
+  width: 100vw;
   height: 100vh;
-  background-image: url("./assets/bg-image-main.png");
+  background-image: url("./assets/bg-portafolio.png");
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  display: grid;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 main h1 {
-  position: relative;
   top: 140px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-size: 64px;
   color: white;
 }
+main h1 span {
+  color: #c6807a;
+}
 
 main .mainNombre {
-  position: absolute;
-  width: 420px;
+  padding: 20px;
   display: flex;
-  background-color: #7299fe80;
+  background-color: #36363690;
   font-size: 36px;
   color: white;
-  bottom: 28%;
-  justify-content: center;
-  margin-left: 22%;
+  align-items: center;
   border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .mainNombre span {
+  color: #c6807a;
+  font-size: 90px;
 }
 /* Final de Estilos para main */
 
@@ -88,16 +105,297 @@ main .mainNombre {
 
 /* Inicio de Estilos para My skills */
 #MySkills {
+  width: 100vw;
   height: 50vh;
-  background-color: #fb7171;
+  background-color: #0d0d0d;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+}
+#MySkills h2 {
+  color: #c6807a;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+.General-sk-container {
+  display: flex;
+  width: 100%;
+  gap: 70px;
+  color: #ffffff90;
+}
+.skills-container {
+  margin-bottom: 30px;
+}
+
+.left-section {
+  width: 50%;
+}
+.right-section {
+  width: 50%;
+}
+.bar-container {
+  width: 100%;
+  height: 25px;
+  background-color: #2f343d;
+  transform: skew(30deg);
+  margin-top: 15px;
+}
+.bar-porcentaje {
+  height: 100%;
+
+  background-color: #7596b8;
+}
+#id-html {
+  width: 90%;
+}
+#id-css {
+  width: 70%;
+}
+#id-angular {
+  width: 80%;
+}
+#id-figma {
+  width: 60%;
+}
+#id-javascript {
+  width: 70%;
+}
+#id-react {
+  width: 90%;
+}
+#id-python {
+  width: 50%;
+}
+#id-nodejs {
+  width: 70%;
 }
 /* Final de Estilos para My skills*/
 
 /*******************************************/
 
-/* Inicio de Estilos para Portafolio */
-
+/* Inicio de Estilos para Servicios */
 #Servicios {
   height: 50vh;
-  background-color: #ffd233;
+  background-color: #0d0d0d;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+}
+.servicios-div {
+  max-width: 1000px;
+}
+#Servicios h2 {
+  color: #c6807a;
+  font-size: 50px;
+  text-align: center;
+}
+.servicios-general {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  gap: 20px;
+}
+.card-container {
+  padding: 20px;
+  width: 200px;
+  display: grid;
+  color: white;
+  margin-right: 50px;
+  text-align: center;
+  background-color: #ffffff10;
+  border-radius: 15px;
+  justify-items: center;
+}
+/* Final de Estilos para Servicios */
+
+/**********************************************/
+
+/* Inicio de Estilos para Portafolio */
+#Portafolio {
+  padding: 10px;
+  background-color: #0d0d0d;
+  max-width: 1000px;
+}
+#Portafolio h2 {
+  color: #c6807a;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.portfolio-container img {
+  width: 200px;
+  border-radius: 15px;
+}
+/* Final de Estilos para Portafolio */
+
+/**********************************************/
+
+/* Inicio de Estilos para Clientes */
+#Clientes {
+  padding: 10px;
+  background-color: #0d0d0d;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+}
+.clientes-div {
+  max-width: 1000px;
+  margin-top: 150px;
+}
+#Clientes h2 {
+  color: #c6807a;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.logo-clientes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.logo-clientes img {
+  width: 200px;
+  height: 100px;
+}
+/* Final de Estilos para Clientes */
+
+/**********************************************/
+
+/* Inicio de Estilos para Contacto */
+#Contacto {
+  width: 100vw;
+  background-color: #0d0d0d;
+  display: grid;
+  justify-content: center;
+  margin-top: 150px;
+}
+.contacto-div {
+  width: 1000px;
+  max-width: 1000px;
+  display: grid;
+  justify-content: center;
+}
+.contacto-div h2 {
+  color: #c6807a;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.container-form {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+.container-form form {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+.container-form label {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.container-form input {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #252525;
+  color: rgba(255, 255, 255, 0.644);
+  font-size: 16px;
+  border: 0;
+}
+
+.container-form textarea {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #252525;
+  color: rgba(255, 255, 255, 0.644);
+  font-size: 16px;
+  border: 0;
+}
+button {
+  grid-column: span 2;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #c6807a;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* Final de Estilos para Contacto */
+
+/**********************************************/
+
+/* Inicio de Estilos para footer */
+footer {
+  background-color: #282c34;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.568);
+  margin-top: 50px;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.568);
+  text-decoration: none;
+}
+/* Final de Estilos para footer */
+
+/**********************************************/
+
+/*************** Inicio para Estilos Responsive *************/
+
+@media (max-width: 767.98px) {
+  /* inicio esilos header */
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    width: 100vw;
+  }
+  header nav ul {
+    visibility: hidden;
+  }
+
+  /* Estilos para Servicios*/
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80px;
+    height: 90px;
+  }
+
+  /*contact form*/
+  #Contacto {
+    width: 100vw;
+  }
+  .contacto-div {
+    width: 100%;
+  }
+  .container-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .container-form button {
+    width: 100%;
+  }
 }
