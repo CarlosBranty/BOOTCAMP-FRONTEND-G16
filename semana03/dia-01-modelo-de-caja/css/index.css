@@ -47,10 +47,13 @@ a {
 
 img {
   /* TODO: RWD para imagenes*/
+  max-width: 100%;
+  height: auto;
 }
 
 .wrapper {
-  width: 1440px;
+  /* width: 1440px; */
+  width: min(100%-3rem, 1440px);
   /*TODO: adaptar el ancho de la pagina a dispositivos moviles*/
 }
 
@@ -91,7 +94,7 @@ img {
 }
 
 .hero__title {
-  width: 720px;
+  width: min(100%-3rem, 720px);
   font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
   font-size: 2.5rem;
@@ -99,16 +102,25 @@ img {
 }
 
 .hero__text {
-  width: 720px;
+  width: min(100%-3rem, 720px);
   font-family: var(--font-secondary);
   padding: 0 7rem;
   font-size: 1.2rem;
   text-align: center;
 }
+/*
+
+*/
+
+@media (max-width: 768px) {
+  .hero__text {
+    padding: 0;
+  }
+}
 .hero__button {
   font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
-  border: 0;
+  border: none;
   border-radius: 7rem;
   padding: 1rem 1.5rem;
   min-width: 220px;
@@ -130,6 +142,11 @@ img {
   justify-content: center;
   gap: 5rem;
   background-color: var(--primary-dark-blue-main);
+}
+@media (max-width: 768px) {
+  .features {
+    grid-template-columns: 340px;
+  }
 }
 .feature {
   text-align: center;
@@ -156,6 +173,11 @@ img {
   justify-content: center;
   align-items: center;
   padding-top: 8rem;
+}
+@media (max-width: 768px) {
+  .collaboration {
+    flex-direction: column;
+  }
 }
 .how_works {
   display: flex;
@@ -190,6 +212,15 @@ img {
 .testimonials {
   display: flex;
   gap: 2rem;
+  justify-content: center;
+  padding-top: 8rem;
+  padding-bottom: 18rem;
+  background-color: var(--primary-dark-blue-main);
+}
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column;
+  }
 }
 .testimonial {
   background-color: var(--primary-dark-blue-testimonial);
@@ -199,15 +230,133 @@ img {
 .testimonial__text {
   margin-bottom: 2rem;
   line-height: 1.5;
+  width: 21rem;
 }
 .testimonial__profile {
   display: flex;
   gap: 0.5rem;
+  font-size: 0.8rem;
 }
 .testimonial__profile img {
   border-radius: 50%;
+}
+.testimonial__profile h4 {
+  font-weight: var(--font-weight-bold);
 }
 .testimonial__profile h5 {
   font-weight: var(--font-weight-regular);
 }
 /*Final de estilos para testimonials*/
+
+/************************************************************/
+
+/*Inicio de estilos para footer*/
+
+/****** newsletter seccion ********/
+.early-access {
+  font-family: var(--font-primary);
+
+  width: 53rem;
+  padding: 2rem;
+  border-radius: 1rem;
+
+  background-color: var(--primary-dark-blue-testimonial);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.early-access h2 {
+  font-size: 2rem;
+}
+.early-access p {
+  text-align: center;
+}
+.early-access form {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .early-access {
+    width: 100%;
+  }
+  .early-access form {
+    flex-direction: column;
+  }
+}
+.early-access input[type="email"] {
+  border-radius: 1.5rem;
+  border: none;
+  padding: 1rem 2rem;
+  min-width: 30rem;
+}
+.early-access input[type="submit"] {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  border: none;
+  border-radius: 7rem;
+  padding: 1rem 1.5rem;
+  min-width: 220px;
+  color: var(--neutral-white);
+  background: linear-gradient(
+    90deg,
+    var(--accent-cyan) 0%,
+    var(--accent-blue) 35%
+  );
+  cursor: pointer;
+}
+/****** newsletter seccion ********/
+.footer {
+  font-family: var(--font-primary);
+  background-color: var(--primary-dark-blue-footer);
+  padding: 15rem 0 5rem 0;
+
+  position: relative;
+}
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 76rem;
+  margin: 0 auto;
+}
+.footer-info {
+  display: flex;
+  gap: 4rem;
+  width: 100%;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .footer-info {
+    flex-direction: column;
+  }
+}
+.footer-info__description {
+  width: 22rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.footer-info__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer-info__contact span {
+  display: flex;
+  gap: 1rem;
+}
+.footer-info__links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+/*Final de estilos para footer*/
