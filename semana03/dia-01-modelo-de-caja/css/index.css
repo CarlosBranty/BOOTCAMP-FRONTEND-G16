@@ -83,6 +83,11 @@ img {
   gap: 2rem;
   padding-top: 2rem;
   padding-bottom: 12rem;
+
+  background: url(../images/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
 }
 
 .hero__title {
@@ -126,4 +131,56 @@ img {
   gap: 5rem;
   background-color: var(--primary-dark-blue-main);
 }
+.feature {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.feature__title {
+  font-family: var(--font-primary);
+}
+.feature__text {
+  font-family: var(--font-secondary);
+}
 /*Final de estilos para features*/
+
+/************************************************************/
+
+/*Inicio de estilos para collaboration*/
+.collaboration {
+  display: flex;
+  gap: 5rem;
+  background-color: var(--primary-dark-blue-main);
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+.how_works {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30rem;
+}
+.how_works__title {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: 2.5rem;
+}
+.how_works__text {
+  font-family: var(--font-secondary);
+}
+
+.how_works__button {
+  font-family: var(--font-secondary);
+  color: var(--accent-cyan);
+  display: flex;
+  gap: 0.5rem;
+  /* margin: auto; */
+  width: 10.8rem;
+  border-bottom: 1px solid var(--accent-cyan);
+  padding-bottom: 0.5rem;
+}
+
+/*Final de estilos para collaboration*/
