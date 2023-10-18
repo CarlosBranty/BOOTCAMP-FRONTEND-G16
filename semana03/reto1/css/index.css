@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
+
+:root {
+  /*FONTS*/
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Open Sans", sans-serif;
+  --font-size: 16px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  /* COLORS */
+
+  --primary-very-dark-blue: hsl(243, 87%, 12%);
+  --primary-sesaturated-blue: hsl(238, 22%, 44%);
+
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+
+  /* Neutral */
+
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-gray: hsl(0, 0%, 75%);
+}
+
+/* RESETS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  background-color: var(--light-grayish-blue);
+  color: var(--primary-very-dark-blue);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  /* TODO: RWD para imagenes*/
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  /* width: 1440px; */
+  width: min(100%-3rem, 1440px);
+  /*TODO: adaptar el ancho de la pagina a dispositivos moviles*/
+}
+
+/* Estilos para Header */
+.header {
+  font-family: var(--font-primary);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  font-weight: var(--font-weight-regular);
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.header__nav {
+  padding: 10px;
+  list-style: none;
+  margin: 10px;
+  display: flex;
+  gap: 4rem;
+}
+/*Final de estilos para header*/
+
+/********************************************************/
+
+/*Inicio de estilos para hero*/
+.hero {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
