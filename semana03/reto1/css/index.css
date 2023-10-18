@@ -2,8 +2,8 @@
 
 :root {
   /*FONTS*/
-  --font-primary: "Raleway", sans-serif;
-  --font-secondary: "Open Sans", sans-serif;
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Raleway", sans-serif;
   --font-size: 16px;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
@@ -18,7 +18,7 @@
 
   /* Neutral */
 
-  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-grayish-blue: #f8f8fe;
   --light-gray: hsl(0, 0%, 75%);
 }
 
@@ -35,6 +35,7 @@ html {
 body {
   background-color: white;
   color: var(--primary-very-dark-blue);
+  font-family: var(--font-primary);
 }
 
 a {
@@ -62,7 +63,7 @@ img {
 
 /* Estilos para Header */
 .header {
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -85,9 +86,107 @@ img {
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 3rem;
+  gap: 8rem;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+}
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.hero input {
+  padding: 0.6rem;
+  width: 18rem;
+  border: 1px solid;
+  margin-right: 1.5rem;
+}
+.hero button {
+  background-color: var(--bright-blue);
+  border: none;
+  color: white;
+  padding: 0.65rem;
+  width: 12rem;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.hero button:hover {
+  background-color: #6b9bff;
 }
 .hero__curve {
   width: 100vw;
+  padding-top: 8rem;
 }
 /*Final de estilos para hero*/
+
+/********************************************************/
+
+/*Inicio de estilos para Productive*/
+.productive_section {
+  background-color: var(--light-grayish-blue);
+}
+.productive {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7rem;
+  justify-content: center;
+  margin-top: -10px;
+  align-items: center;
+}
+.productivo__content {
+  margin-bottom: 5rem;
+}
+.productive h2 {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+}
+.productive p {
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  padding-right: 10rem;
+  font-weight: var(--font-weight-bold);
+}
+.productive a {
+  color: var(--moderate-cyan);
+  font-weight: var(--font-weight-bold);
+  border-bottom: 1px solid var(--moderate-cyan);
+}
+.productive__card {
+  background-color: white;
+  width: 25rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.096);
+}
+.productive__card p {
+  padding: 0;
+  font-size: 1rem;
+  font-weight: var(--font-weight-regular);
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+.productive__testimonial {
+  display: flex;
+  gap: 1rem;
+}
+.productive__testimonial img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.productive__qyotes_img {
+  width: 30px;
+  margin-bottom: 0;
+}
+.productive__testimonial h4 {
+  font-weight: var(--font-weight-bold);
+}
+.productive__testimonial h5 {
+  font-weight: var(--font-weight-regular);
+}
+/*Final de estilos para Productive*/
