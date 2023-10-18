@@ -7,31 +7,46 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <header class="header wrapper">
-      <img src="./images/logo.svg" alt="" />
-      <nav>
-        <ul class="header__nav">
-          <li><a href="">Features</a></li>
-          <li><a href="">Team</a></li>
-          <li><a href="">Sign in</a></li>
-        </ul>
-      </nav>
+    <header class="wrapper">
+      <div class="header contenedor">
+        <img src="./images/logo.svg" alt="" />
+        <nav>
+          <ul class="header__nav">
+            <li><a href="">Features</a></li>
+            <li><a href="">Team</a></li>
+            <li><a href="">Sign in</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main>
-      <section class="hero">
-        <div>
-          <h1>All your files in one secure location, accessible anywhere.</h1>
-          <p>
-            Fylo stores your most important files in one secure location. Access
-            them wherever you need, share and collaborate with friends, family,
-            and co-workers.
-          </p>
-          <form>
-            <input type="email" />
-            <button type="submit">Get Started</button>
-          </form>
+      <!-- Seccion para Hero el main de la pagina -->
+      <section>
+        <div class="hero contenedor">
+          <div>
+            <h1>All your files in one secure location, accessible anywhere.</h1>
+            <p>
+              Fylo stores your most important files in one secure location.
+              Access them wherever you need, share and collaborate with friends,
+              family, and co-workers.
+            </p>
+            <form>
+              <input type="email" />
+              <button type="submit">Get Started</button>
+            </form>
+          </div>
+          <img src="./images/illustration-1.svg" alt="main-image" />
         </div>
-        <img src="./images/illustration-1.svg" alt="" />
+        <img
+          class="hero__curve"
+          src="./images/bg-curve-desktop.svg"
+          alt="curve-img"
+        />
+      </section>
+
+      <!-- Seccion para stay productive -->
+      <section class="pruductive">
+        <div class="contenedor"></div>
       </section>
     </main>
   </body>

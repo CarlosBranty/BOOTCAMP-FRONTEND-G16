@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  background-color: var(--light-grayish-blue);
+  background-color: white;
   color: var(--primary-very-dark-blue);
 }
 
@@ -54,6 +54,12 @@ img {
   /*TODO: adaptar el ancho de la pagina a dispositivos moviles*/
 }
 
+/* clase contenedor para añadir padding al content de todas las secciones */
+.contenedor {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 /* Estilos para Header */
 .header {
   font-family: var(--font-primary);
@@ -62,8 +68,7 @@ img {
   justify-content: space-between;
   margin-top: 3rem;
   font-weight: var(--font-weight-regular);
-  padding-left: 5rem;
-  padding-right: 5rem;
+  background-color: white;
 }
 .header__nav {
   padding: 10px;
@@ -78,9 +83,11 @@ img {
 
 /*Inicio de estilos para hero*/
 .hero {
-  padding-left: 5rem;
-  padding-right: 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-gap: 3rem;
 }
+.hero__curve {
+  width: 100vw;
+}
+/*Final de estilos para hero*/
