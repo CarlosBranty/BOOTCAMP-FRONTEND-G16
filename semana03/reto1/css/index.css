@@ -129,6 +129,7 @@ img {
 /*Inicio de estilos para Productive*/
 .productive_section {
   background-color: var(--light-grayish-blue);
+  padding-bottom: 5rem;
 }
 .productive {
   display: grid;

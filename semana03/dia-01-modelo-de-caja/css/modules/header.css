@@ -1,0 +1,24 @@
+/* Estilos para Header */
+.header {
+  font-family: var(--font-primary);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+}
+.header__logo {
+  width: 156px;
+}
+.header__nav {
+  padding: 10px;
+  list-style: none;
+  margin: 10px;
+  display: flex;
+  gap: 3rem; /* 1rem = 14px (html)*/
+}
+/*Final de estilos para header*/
