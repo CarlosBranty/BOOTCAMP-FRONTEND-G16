@@ -1,0 +1,33 @@
+@mixin default-border{
+    border: 2px solid #bbbb;
+}
+@mixin custom-border($width, $color, $is-solid:true) {
+    // border: $width solid $color;
+    @if $is-solid{
+        border: $width solid $color;
+    } @else{
+        border: $width dashed $color;
+    }
+}
+
+.card{
+    background-color: $card-bg;
+    border: 1px solid $card-border-color;
+    border-radius: $card-border-radius;
+    text-align: left;
+    margin-bottom: 1rem;
+    @include default-border;
+    @include custom-border(4px, red);
+    @include custom-border(3px,green ,false);
+   
+    &__header{
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid $card-border-color;
+    }
+    &__body{
+        padding: 1rem 1.5rem;
+    }
+    &__success{
+        background-color: aquamarine;
+    }
+}

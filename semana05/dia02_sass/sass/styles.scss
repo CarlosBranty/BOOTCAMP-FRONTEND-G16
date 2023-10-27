@@ -1,16 +1,17 @@
+:root{
+    --mi-variable: black;
+}
+@import 'variables';
+@import 'card';
+@import 'mixins';
 
-$primary-color: #FFA559;
-$card-bg:#fff;
-$card-border-color: #454545;
-$card-border-radius: 6px;
 
 body{
     background-color: $primary-color;
+    // background-color: var(--mi-variable);
     // color: white;
     text-align: center;
 }
-.card{
-    background-color: $card-bg;
-    border: 1px solid $card-border-color;
-    border-radius: $card-border-radius;
-}
+
+
+
