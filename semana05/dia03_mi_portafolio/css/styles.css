@@ -122,4 +122,60 @@ a {
   height: 7rem;
   background-color: #4f4557;
   border-radius: 0.5rem;
+}
+
+.Habil {
+  display: flex;
+  gap: 50px;
+  max-width: 1720px;
+  margin: 12rem auto;
+}
+.Habil__content {
+  width: 50%;
+}
+.Habil__content h3 {
+  width: 12rem;
+  padding: 0.5rem;
+  background: #6d5d6e;
+  text-align: center;
+  border-radius: 1rem;
+  color: #FFb742;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.Habil__content h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.Habil__content p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  padding-right: 20rem;
+}
+.Habil__content p a {
+  color: #FFb742;
+  font-weight: 600;
+}
+.Habil__skills {
+  width: 50%;
+}
+.Habil__skills__pyramid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.Habil__skills__pyramid__nivel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.Habil__skills__pyramid img {
+  width: 70px;
+  height: 70px;
+  padding: 0.5rem;
+  background-color: #393646;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
 }/*# sourceMappingURL=styles.css.map */

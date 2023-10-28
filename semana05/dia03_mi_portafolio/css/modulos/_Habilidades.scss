@@ -1,0 +1,61 @@
+.Habil{
+    display: flex;
+    gap: 50px;
+    max-width: 1720px;
+    margin:12rem auto;
+    &__content{
+        width: 50%;
+
+        & h3{
+            width: 12rem;
+            padding: 0.5rem;
+            background: $primary-color-blue3;
+            text-align: center;
+            border-radius: 1rem;
+            color: $primary-color-gold;
+            margin-bottom: 1rem;
+            font-weight: $font-weight-semibold;
+        }
+        & h2{
+            font-size: 3rem;
+            font-weight: $font-weight-bold;
+        }
+
+        & p{
+            font-size: 1rem;
+            font-weight: $font-weight-regular;
+            margin-bottom: 3rem;
+            padding-right: 20rem;
+        }
+        & p a{
+            color: $primary-color-gold;
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+
+    &__skills{
+        width: 50%;
+
+        &__pyramid{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            &__nivel{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 1rem;
+            }
+        }
+        &__pyramid img{
+            width: 70px;
+            height: 70px;
+            padding: 0.5rem;
+            background-color: $primary-color-blue1;
+            border-radius: 0.5rem;
+            margin-right: 1rem;
+        }
+
+    }
+}
