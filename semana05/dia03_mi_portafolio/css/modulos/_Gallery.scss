@@ -1,0 +1,40 @@
+.Galeria{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1320px;
+    margin:12rem auto;
+    
+    
+    & h3{
+            width: 12rem;
+            padding: 0.5rem;
+            background: $primary-color-blue3;
+            text-align: center;
+            border-radius: 1rem;
+            color: $primary-color-gold;
+            margin-bottom: 1rem;
+            font-weight: $font-weight-semibold;
+            text-transform: uppercase;
+            margin: auto;
+        }
+
+    & h2{
+            font-size: 3rem;
+            font-weight: $font-weight-bold;
+            margin: auto;
+        }
+
+    &__Links{
+        display: flex;
+        gap: 4rem;
+        justify-content: center;
+        font-weight: $font-weight-semibold;
+        margin: 3rem 0;
+        &__active, & a:hover{
+            color: $primary-color-gold;
+            border-bottom: 2px solid $primary-color-gold;
+        }
+    
+    }
+}

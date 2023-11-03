@@ -1,7 +1,8 @@
 .Habil{
     display: flex;
     gap: 50px;
-    max-width: 1720px;
+ 
+    max-width: 1320px;
     margin:12rem auto;
     &__content{
         width: 50%;
@@ -25,7 +26,7 @@
             font-size: 1rem;
             font-weight: $font-weight-regular;
             margin-bottom: 3rem;
-            padding-right: 20rem;
+            padding-right: 10rem;
         }
         & p a{
             color: $primary-color-gold;

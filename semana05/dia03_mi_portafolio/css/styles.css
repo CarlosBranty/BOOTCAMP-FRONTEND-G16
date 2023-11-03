@@ -127,7 +127,7 @@ a {
 .Habil {
   display: flex;
   gap: 50px;
-  max-width: 1720px;
+  max-width: 1320px;
   margin: 12rem auto;
 }
 .Habil__content {
@@ -151,7 +151,7 @@ a {
   font-size: 1rem;
   font-weight: 400;
   margin-bottom: 3rem;
-  padding-right: 20rem;
+  padding-right: 10rem;
 }
 .Habil__content p a {
   color: #FFb742;
@@ -178,4 +178,40 @@ a {
   background-color: #393646;
   border-radius: 0.5rem;
   margin-right: 1rem;
+}
+
+.Galeria {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 1320px;
+  margin: 12rem auto;
+}
+.Galeria h3 {
+  width: 12rem;
+  padding: 0.5rem;
+  background: #6d5d6e;
+  text-align: center;
+  border-radius: 1rem;
+  color: #FFb742;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: auto;
+}
+.Galeria h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: auto;
+}
+.Galeria__Links {
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  font-weight: 600;
+  margin: 3rem 0;
+}
+.Galeria__Links__active, .Galeria__Links a:hover {
+  color: #FFb742;
+  border-bottom: 2px solid #FFb742;
 }/*# sourceMappingURL=styles.css.map */
