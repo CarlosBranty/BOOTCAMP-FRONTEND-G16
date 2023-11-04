@@ -37,7 +37,18 @@ const miObjeto = {
     apellido: 'Conza',
     colorFavorito: 'azúl',
     miEdad: 28,
-    'mi edad': 28
+    'mi edad': 28,
+    coloresFavoritos: ['negro', 'rosa', 'rgb'],
+    cursos:[
+        {
+            nombre:'Matemática',
+            nota: 18
+        },
+        {
+            nombre:'Algoritmos',
+            nota: 20
+        }
+    ]
 };
 console.log(miObjeto);
 
@@ -45,3 +56,9 @@ console.log(miObjeto);
 console.log(miObjeto.nombre);
 console.log(miObjeto.apellido);
 console.log(miObjeto['mi edad']);
+console.log(miObjeto.coloresFavoritos);
+console.log(miObjeto.coloresFavoritos[2]);
+console.log(miObjeto.cursos)
+console.log(miObjeto.cursos[1])
+console.log(miObjeto.cursos[1].nota)
+console.log(miObjeto.cursos[1]['nombre'])
