@@ -58,7 +58,63 @@ console.log(miObjeto.apellido);
 console.log(miObjeto['mi edad']);
 console.log(miObjeto.coloresFavoritos);
 console.log(miObjeto.coloresFavoritos[2]);
-console.log(miObjeto.cursos)
-console.log(miObjeto.cursos[1])
-console.log(miObjeto.cursos[1].nota)
-console.log(miObjeto.cursos[1]['nombre'])
+console.log(miObjeto.cursos); // para acceder al un objeto
+console.log(miObjeto.cursos[1]);
+console.log(miObjeto.cursos[1].nota);
+console.log(miObjeto.cursos[1]['nombre']);
+
+/* eliminar propiedades de un objeto */
+delete miObjeto.colorFavorito;
+console.log(miObjeto);
+
+/* Insertar un nueva propiedad a un objeto */
+miObjeto.PlatoFavorito = 'Pastel de papa';
+miObjeto['Juegos favoritos'] = ['Valorant', 'BDO']
+console.log(miObjeto);
+
+/* DESTRUCTURING */
+const nombreValue = miObjeto.nombre;
+console.log(nombreValue);
+
+const {nombre, apellido} = miObjeto;
+console.log(nombre,apellido);
+
+const {nombre: nombreValor, apellido:apellidoValor} = miObjeto;
+
+console.log(nombreValor, apellidoValor);
+
+/* destructurin para arreglos */
+const amigos = ['angel', 'carlos', 'claudia', 'franklin', 'samael']
+
+const [amigo1, amigo2] = amigos;
+
+console.log(amigo1);
+console.log(amigo2); 
+
+/* SPREAD OPERATOR : para poder juntar las propiedades de un objeto
+se antepone ... al nombre de la propiedad para poder utilizarlas*/
+const producto = {
+    nombre:'Laptop', // ojo con el nombre de la propiedad ya que se repite con cliente
+    precio:'6800',
+    categoria: 'tech'
+};
+const cliente = {
+    nombre: 'claudia',
+    isVip: true
+};
+
+const nuevoObjeto = {...producto, ...cliente};
+console.log(nuevoObjeto)
+
+/* SPREAD OPERATOS SIN COLICIONES */
+const nuevoObjetoSinColiciones = {
+    producto: {...producto},
+    cliente: {...cliente}
+
+};
+console.log(nuevoObjetoSinColiciones)
+
+/* OTROS METODOS */
+console.log(Object.keys(producto));//obetenemos solo las keys o claves
+console.log(Object.values(producto)); // obtenemos solo los valores del objeto
+console.log(Object.entries(producto)); // Convierte un objeto en arreglo
