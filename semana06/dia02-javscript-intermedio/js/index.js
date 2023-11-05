@@ -118,3 +118,23 @@ console.log(nuevoObjetoSinColiciones)
 console.log(Object.keys(producto));//obetenemos solo las keys o claves
 console.log(Object.values(producto)); // obtenemos solo los valores del objeto
 console.log(Object.entries(producto)); // Convierte un objeto en arreglo
+
+
+/* METODOS DE ARREGLOS */
+/* METODO INCLUDES, nos indica si el valor que se pasa como parametro se encuentra en el arreglo 
+y devuelve un booleano */
+const numeross =[1,2,3,4,5]
+console.log(numeross.includes(3));
+console.log(numeross.includes(51));
+
+/* METODO filter, nos ayuda a ubicar un elemento dentro de un arreglo */
+const lenguages = ['JavaScript', 'C#', 'php','c', 'c++', 'java'];
+
+console.log(
+    lenguages.filter(
+        function(lenguage){
+            // return lenguage === 'c' // El resultado sera ['c']
+            return lenguage.includes('c') // El resultado sera [javaScript, 'c', 'c++']
+        }
+    )
+)
