@@ -2,6 +2,8 @@
 
 const url = 'https://restcountries.com/v3.1/all?fields=name,flags,region,capital,population,languages,currencies,timezones';
 
+let coutryData = []
+
 const seachInput = document.querySelector('.app__input')
 const filterSelect = document.querySelector('.app__filter')
 
@@ -70,9 +72,10 @@ const renderCoutries = (coutries = []) =>{
 
 document.addEventListener('DOMContentLoaded', async () =>{
 
- const data = await fetchCoutriesAsync()
- renderCoutries(data)
-})
+ const data = await fetchCoutriesAsync();
+ coutryData = data;
+ renderCoutries(data);
+});
 
 // fetchCoutriesAsync()
 // .then(data => renderCoutries(data))
