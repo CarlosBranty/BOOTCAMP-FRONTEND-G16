@@ -102,12 +102,6 @@ h1 {
     justify-items: center;
 }
 
-.app__list--no--found{
-  display: grid;
-  grid-template-rows: repeat(1, fr);
-  gap: 3rem;
-}
-
 @media screen and (min-width: 768px){
     /*Esta media query es  para dispositivos en tables */
     .app__list{

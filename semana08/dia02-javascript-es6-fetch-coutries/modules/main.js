@@ -7,6 +7,7 @@ let coutryData = [];
 
 const seachInput = document.querySelector(".app__input");
 const filterSelect = document.querySelector(".app__filter");
+const resultsDiv = document.querySelector(".app__results")
 
 // function fetchCoutries (){
 //     return fetch(url)
@@ -33,15 +34,19 @@ seachInput.addEventListener("input", (event) => {
   });
 
   renderCoutries(filteredCoutries);
+  renderResults(filteredCoutries)
 });
 
+/* Esto es Filtrado por el combobox */
 filterSelect.addEventListener('input', (event) =>{
   const value = event.target.value;
+
   const filteredRegion = coutryData.filter((regionCoutry) =>{
     const loweredRegion = regionCoutry.region.toLowerCase()
     return loweredRegion.includes(value)
   })
   renderCoutries(filteredRegion)
+  renderResults(filteredRegion)
 })
 
 // TODO: Usar async/await para la funcion fetchCoutries
@@ -59,11 +64,30 @@ const fetchCoutriesAsync = async () => {
   }
 };
 
+
+const renderResults = (countriesFiltered)=>{
+  const total = countriesFiltered.length
+
+  resultsDiv.textContent = `${total} Countries filtered`
+}
+
+
+
 const renderCoutries = (coutries = []) => {
   // console.log(coutries)
+
   const coutryListElement = document.querySelector(".app__list");
 
   let coutryList = "";
+
+  if (coutries.length ===0) {
+    coutryListElement.classList.add('app__list--no-found');
+    coutryListElement.innerHTML = `<p>Sorry, no results found!</p>
+    <img src="./images/icon-sad-square.svg" width="200" height="200"></img>
+    `;
+    return
+  }
+  coutryListElement.classList.remove('app__list--no-found');
 
   coutries.forEach((country) => {
     coutryList += `
