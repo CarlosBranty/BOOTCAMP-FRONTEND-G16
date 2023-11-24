@@ -1,36 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// function App() {
+//   return (
+//    <h1>Hola que tal react</h1>
+//   )
+// }
 
-function App() {
-  
-  const [count, setCount] = useState(0)
+// export default App
 
+// const App = () => {
+//   return<h1>Hola que tal react no me este provocando</h1>
+// }
+// export default App
+
+// function Saludo(){
+//   return <h1>Hola que tal react</h1>
+// }
+import Saludo from "./components/Saludo";
+import Despedida from "./components/Despedida";
+import { LISTA_DE_FRUTAS, EDAD } from "./components/Frutas";
+import './demo.css';
+
+
+const App = () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank" rel='noreferrer'>
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <h1 style={{color:'red', textDecoration:'underline'}}>Holaaaaaa</h1>
+      <Saludo/>
+      <Despedida/>
+      {1+2}
+      {LISTA_DE_FRUTAS}
+      {EDAD}
 
-export default App
+    </>
+  );
+};
+export default App;
