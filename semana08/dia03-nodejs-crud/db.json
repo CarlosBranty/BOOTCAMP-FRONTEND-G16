@@ -103,6 +103,14 @@
       "estreno": "2023-04-05",
       "generoId": 3,
       "resumen": "Resumen de prueba"
+    },
+    {
+      "nombre": "Pacific Rim",
+      "imagen": "https://es.web.img2.acsta.net/pictures/210/151/21015102_20130625124802571.jpg",
+      "estreno": "2010-07-10",
+      "generoId": 2,
+      "resumen": "La mejor pelicula de la vida",
+      "id": 10
     }
   ]
 }

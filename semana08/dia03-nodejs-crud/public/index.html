@@ -1,81 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRUD de peliculas con json-server</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD de Películas con json-server</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <style>
+    .fs-small {
+      font-size: .8rem;
+    }
+    .flex {
+      display: flex;
+    }
+    .gap-0\.5 {
+      gap: .5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="container-fluid">
+    <ul>
+      <li>
+        <strong>CRUD de Películas con json-server</strong>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        Nuevo producto
+      </li>
+    </ul>
+  </nav>
 
-    />
-    <style>
-      .fs-small{
-        font-size: .8rem;
-      }
-      .flex{
-        display: flex;
-      }
-      .gap-0\.5{
-        gap: .5rem;
-      }
-    </style>
-  </head>
-  <body>
-    <nav class="container-fluid">
-      <ul>
-        <li>CRUD de peliculas con json - server</li>
-      </ul>
+  <div class="container-fluid">
+    <div class="grid">
+      <div>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Imagen</th>
+              <th>Nombre</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody class="peliculas__list">
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <form id="peliculasForm">
+          <h2>Nueva película</h2>
 
-      <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a href="">Peliculas</a></li>
-        <li><a href="">Actores</a></li>
-      </ul>
-    </nav>
+          <input type="text" name="nombre" placeholder="Nombre" required />
+          <input type="text" name="imagen" placeholder="Imagen" required />
+          <input type="date" name="estreno" placeholder="Estreno" required />
+          <select name="genero" required>
+            <option value="">Selecciona un genero</option>
+            <option value="1">Comedia</option>
+            <option value="2">Acción</option>
+            <option value="3">Animación</option>
+            <option value="4">Aventura</option>
+          </select>
+          <textarea name="resumen" placeholder="Resumen"></textarea>
 
-    <div class="container-fluid">
-      <div class="grid">
-        <div>
-          <table>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>Imagen</th>
-                <th>Nombre</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
-            <tbody class="peliculas__list">
-              
-            </tbody>
-          </table>
-        </div>
-        <div>
-            <form action="">
-                <input type="text" name="nombre" placeholder="Nombre de la pelicula">
-                <input type="text" name="image" placeholder="URL de imagen de la pelicula">
-                <input type="date" name="estreno" placeholder="Fecha de estreno de la perlicula">
-                <select name="genero" id="">
-                    <option value="">Selecciona un Genero</option>
-                    <option value="">Comedia</option>
-                    <option value="">Accion</option>
-                    <option value="">Animacion</option>
-                    <option value="">Aventura</option>
-                    
-                </select>
-                <textarea name="resumen" placeholder="resumen"></textarea>
-                <input type="submit"  value="Guardar">
-            </form>
-        </div>
+          <input type="submit" value="Guardar" />
+        </form>
       </div>
     </div>
+  </div>
 
-    <footer class="container-fluid">
-        Carlos Branty Conza - Noviembre 2023
-    </footer>
+  <footer class="container-fluid">
+    Victor Villazón - Noviembre 2023
+  </footer>
 
-
-    <script src="./main.js" type="module"></script>
-  </body>
+  <script src="./main.js" type="module"></script>
+</body>
 </html>
