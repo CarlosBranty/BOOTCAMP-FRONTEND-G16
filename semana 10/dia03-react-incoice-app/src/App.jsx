@@ -1,7 +1,20 @@
+import { useEffect, useState } from "react";
+import { fetchInvoices } from "./services/invoices";
+import Invoices from "./pages/Invoices";
+
 export default function App() {
+  const [invoices, setInvoices] = useState([]);
+ 
+
+  useEffect(() => {
+    
+    fetchInvoices()
+    .then((invoices)=>setInvoices(invoices))
+  }, []);
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <>
+      <Invoices invoices={invoices}/>
+      {/* {JSON.stringify(invoices)} */}
+    </>
+  );
 }
